@@ -14,20 +14,23 @@ li {
 	cursor: pointer;
 }
 
-/* Header Styles */
 header {
 	height: 5rem;
 }
+
 header,
 .left,
 ul,
-.right {
+.right,
+.item,
+.add {
 	display: flex;
 	align-items: center;
 }
 
 .logo,
-.right {
+.right,
+.nav-list {
 	padding-bottom: 2rem;
 }
 
@@ -37,8 +40,38 @@ ul,
 	justify-content: center;
 }
 
-header {
+.checkout,
+.add-to-cart {
+	background-color: hsl(26, 100%, 55%);
+}
+
+button,
+input {
+	border: none;
+}
+
+header,
+.cart-label {
 	border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.cart-label,
+.checkout,
+.previews {
+	width: 100%;
+}
+
+.checkout,
+.thumbnail,
+.little-thumbnail,
+.is-active,
+.add-to-cart {
+	border-radius: 0.5rem;
+}
+
+/* Header Styles */
+
+header {
 	justify-content: space-between;
 	padding: 2rem;
 	padding-bottom: 0;
@@ -52,10 +85,6 @@ ul {
 .nav-list,
 .cart {
 	margin-right: 2rem;
-}
-
-.nav-list {
-	padding-bottom: 2rem;
 }
 
 .nav-list:hover {
@@ -95,15 +124,8 @@ ul {
 
 .cart-label {
 	font-weight: bold;
-	border-bottom: 1px solid rgb(226, 226, 226);
-	width: 100%;
 	padding-bottom: 1rem;
 	margin-bottom: 1.5rem;
-}
-
-.item {
-	display: flex;
-	align-items: center;
 }
 
 .item .product-image,
@@ -135,13 +157,9 @@ span {
 
 .checkout {
 	margin-top: 1rem;
-	width: 100%;
-	border: none;
-	background-color: hsl(26, 100%, 55%);
 	color: white;
 	font-weight: 700;
 	padding: 0.7rem 0;
-	border-radius: 0.5rem;
 }
 
 /* Main Styles */
@@ -152,12 +170,10 @@ main {
 }
 
 .previews {
-	width: 100%;
 	margin: 0 3rem;
 }
 
 .thumbnail {
-	border-radius: 0.5rem;
 	height: 25rem;
 	width: 25rem;
 }
@@ -172,13 +188,11 @@ main {
 
 .little-thumbnail {
 	height: 5rem;
-	border-radius: 0.5rem;
 }
 
 .is-active {
 	border: 2px solid hsl(26, 100%, 55%);
 	/* opacity: 0.3; */
-	border-radius: 0.5rem;
 }
 
 .description {
@@ -232,8 +246,6 @@ h1 {
 
 .add {
 	margin-top: 2rem;
-	display: flex;
-	align-items: center;
 }
 
 .quantity {
@@ -243,7 +255,6 @@ h1 {
 
 .quantity button {
 	background-color: transparent;
-	border: none;
 	font-weight: 700;
 	color: hsl(26, 100%, 55%);
 	font-size: 1.5rem;
@@ -251,7 +262,6 @@ h1 {
 
 input {
 	margin: 0 1rem;
-	border: none;
 	width: 2.5rem;
 	color: black;
 	text-align: center;
@@ -264,13 +274,9 @@ input:focus {
 
 .add-to-cart {
 	display: inline-block;
-	background-color: hsl(26, 100%, 55%);
-	border: none;
 	color: white;
 	font-weight: 700;
 	padding: 0.7rem 3rem;
-	border-radius: 0.5rem;
-	/* width:  */
 	white-space: nowrap;
 }
 
@@ -316,7 +322,6 @@ input:focus {
 .caret-btn {
 	background-color: white;
 	padding: 0.5rem 0.7rem;
-	border: none;
 	border-radius: 100%;
 	position: absolute;
 }
